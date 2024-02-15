@@ -1,0 +1,155 @@
+@keyframes tansani {
+    0%{
+        opacity: 1%;
+        transform: skewX(15deg);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: skewX(0deg);
+        
+    }
+}
+
+
+
+@keyframes sunani {
+    0%{
+        transform: scale(5%);
+        transform: translateY(500px);
+        filter: brightness(100%);
+    }
+    60%{
+        filter: brightness(100%);
+    }
+    70%{
+        transform: translateY(-15px);
+        filter: brightness(115%);
+    }
+    100%{
+        transform: scale(100%);
+        transform: translateY(0px);
+        filter: brightness(100%);
+        
+        
+    }
+}
+
+:root {
+    --main-color: #FFC800; /* Default color */
+    --secondary-color: #FFA900; /* Secondary color */
+    --third-color: #FFE700; /* Default color */
+    --forth-color: #FF8500; /* Secondary color */
+    --bluemain-color: #3943AA; /* Default color */
+    --bluetwo-color: #0017FF; /* Secondary color */
+
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.totalnav{
+    position: relative;
+    align-content: center;
+    align-items: center;
+    background-color: #3943AA;
+    gap: 5%;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    
+    padding: 2%;
+}
+
+.hamburger i{
+    position: relative;
+    font-size: 25px;
+    color: #FFC800;
+    left: 5px;
+    height: 15px;
+
+}
+
+div .quote{
+    color: #FFC800;
+    position: relative;
+    font-size: small;
+    font-weight: 300;
+    line-height: 16px;
+    left: 11px;
+    width: 95%;
+    text-align: center;
+    align-self: center;
+   
+}
+
+.logo{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    right: 5px;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 375px;
+    overflow: hidden;
+    
+}
+
+.vidcontain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero1t{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    z-index: 1;
+    font-family: 'Protest Riot', sans-serif;
+    color: #3943AA; 
+    text-shadow: 2px 1.5px 0px var(--secondary-color);
+    top: 25px;
+    animation: tansani 1.5s ease;
+    transition: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    
+}
+
+
+.indlogo{
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    left: 27%;
+    bottom: 30%;
+    animation: sunani 3s ease-in;
+}
+
+.hero2t{
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    z-index: 1;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: white;
+    top: 215px;
+    text-shadow: 0px 2px 1px rgb(0, 0, 0);
+    
+}
+
+
+
