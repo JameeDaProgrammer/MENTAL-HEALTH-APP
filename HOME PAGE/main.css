@@ -44,6 +44,8 @@
     --bluetwo-color: #0017FF; /* Secondary color */
 
   }
+  
+
 
 *{
     padding: 0;
@@ -63,7 +65,6 @@
     height: 65px;
     display: flex;
     flex-direction: row;
-    
     padding: 2%;
 }
 
@@ -150,6 +151,68 @@ div .quote{
     text-shadow: 0px 2px 1px rgb(0, 0, 0);
     
 }
+
+/*-----INSPIRATION CARDS------*/
+.inspiresec{
+    position: relative;
+    overflow-x: hidden;
+    height: 400px;
+    background-color: #3943AA;
+}
+
+.inspireset{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    gap: 10px;
+    color: #FFC800;
+    pointer-events: none; 
+    
+    
+}
+
+.inspirecard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--secondary-color) 2px solid;
+    border-radius: 3px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-left: 7%; 
+    
+}
+
+.inspirecard img{
+    border-radius: 50%;
+}
+
+.inspirecard h2{
+    font-size: 22px;
+}
+
+.inspirecard h3{
+    font-size: 15px;
+}
+
+.inspirecard p{
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    color: white;
+    
+}
+
+
+
+
+
+    
+
+ 
 
 
 
